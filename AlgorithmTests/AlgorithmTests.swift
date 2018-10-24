@@ -23,6 +23,7 @@ class AlgorithmTests: XCTestCase {
 
     func test_OddOccurrencesInArray() {
         XCTAssertEqual(7, Arrays().oddOccurrence([9, 3, 9, 3, 9, 7, 9]))
+        XCTAssertEqual(1, Arrays().oddOccurrence([9, 3, 3, 1, 9]))
     }
 
     func test_PermMissingElemLiner() {
