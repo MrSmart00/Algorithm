@@ -52,8 +52,8 @@ class Algorithm {
         return (first != last || (A.count == 1 && !first && !last), first && last)
     }
 
-    func frogJump(_ x: Int, _ y: Int, _ d: Int) -> Int {
-        return Int(ceilf(Float(y - x) / Float(d)))
+    func frogJump(_ X: Int, _ Y: Int, _ D: Int) -> Int {
+        return Int(ceil(Double(Y - X) / Double(D)))
     }
 
     func tapeEquilibriumLiner(_ A: [Int]) -> Int {
