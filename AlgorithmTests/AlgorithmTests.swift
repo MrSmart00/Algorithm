@@ -22,8 +22,11 @@ class AlgorithmTests: XCTestCase {
     }
 
     func test_OddOccurrencesInArray() {
+//        XCTAssertEqual(42, Arrays().oddOccurrence([42]))
+//        XCTAssertEqual(4, Arrays().oddOccurrence([2, 2, 3, 3, 4]))
+//        XCTAssertEqual(2, Arrays().oddOccurrence([1, 1, 1, 2, 1]))
         XCTAssertEqual(7, Arrays().oddOccurrence([9, 3, 9, 3, 9, 7, 9]))
-        XCTAssertEqual(1, Arrays().oddOccurrence([9, 3, 3, 1, 9]))
+        XCTAssertEqual(1, Arrays().oddOccurrence([9, 3, 3, 9, 9, 3, 3, 3, 3, 1, 9]))
     }
 
     func test_PermMissingElemLiner() {
@@ -42,7 +45,7 @@ class AlgorithmTests: XCTestCase {
     }
 
     func test_FlogJump() {
-        XCTAssertEqual(Algorithm().frogJump(10, 100, 30), 3)
+        XCTAssertEqual(Algorithm().frogJump(3, 999111321, 7), 142730189)
         XCTAssertEqual(Algorithm().frogJump(90, 100, 30), 1)
         XCTAssertEqual(Algorithm().frogJump(10, 1000, 50), 20)
     }
